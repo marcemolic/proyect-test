@@ -1,0 +1,30 @@
+<!--? TODO: este navbar trabajo con el componente ngx-bootstrap-navbar -->
+
+<nav ngxNavbarDynamicExpand class="navbar navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" >Proyect-Test</a>
+    <!--# TODO: boton escondido -->
+    <button class="navbar-toggler" type="button" (click)="collapse.toggle()" aria-controls="main-nav"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class=" navbar-toggler-icon d-flex align-items-center justify-content-center">
+      </span>
+    </button>
+    <!-- fin del boton escodido -->
+    <!--# TODO: componente que se esconde  -->
+    <ngx-navbar-collapse id="main-nav" #collapse="ngxNavbarCollapse">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="/home">Home</a>
+        </li>
+
+        
+      </ul>
+      <form class="d-flex">
+
+        <!-- FIXME: agregar funcionalidad de cerrar sesion -->
+        <button class="btn btn-outline-danger" (click)="logout()" >Cerrar Sesion</button>
+      </form>
+    </ngx-navbar-collapse>
+    <!-- fin de lo que se puede esconder -->
+  </div>
+</nav>

@@ -1,0 +1,52 @@
+<div class="container">
+  <div class="row">
+    <form (ngSubmit)="editRegister()" [formGroup]="userForm">
+      <div class="mb-3">
+        <label for="txtnombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="txtnombre" formControlName="name">
+      </div>
+      <div class="row">
+        <div class="col-md">
+          <div class="mb-3">
+            <label for="txtnombreuser" class="form-label">Nombre de usuario</label>
+            <input type="text" class="form-control" id="txtnombreuser" formControlName="username">
+          </div>
+
+        </div>
+        <div class="col-md">
+          <div class="mb-3">
+            <label for="txtpassword" class="form-label">Contraseña</label>
+            <input type="text" class="form-control" id="txtpassword" formControlName="website">
+          </div>
+
+        </div>
+      </div>
+      <div class="mb-3">
+        <div class="row">
+          <div class="col-md">
+            <label for="txtpassword" class="form-label">Correo electronico</label>
+            <input type="email" class="form-control" id="txtpassword" formControlName="email">
+          </div>
+          <div class="col-md">
+            <label for="txtpassword" class="form-label">Telefono</label>
+            <input type="phone" class="form-control" id="txtpassword" formControlName="phone">
+          </div>
+        </div>
+
+      </div>
+      <div class="mb-3">
+        <div class="row">
+          <div class="col-6">
+            <button type="submit" class="btn btn-outline-primary me-3" >Editar</button>
+            <button type="submit" class="btn btn-outline-danger me-3" (click)="goToDelete()">Eliminar</button>
+
+          </div>
+          <div class="col-6">
+            <button type="button" class="btn btn-outline-secondary" (click)="goToBack()">Regresar a Lista</button>
+          </div>
+        </div>
+
+      </div>
+    </form>
+  </div>
+</div>

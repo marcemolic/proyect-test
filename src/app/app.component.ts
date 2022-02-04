@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Auth } from '@angular/fire/auth';
+import { Users } from './components/models/users.inteface';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'proyect-test';
+  usuarios!: any;
+  
+  //TODO: definir el usuario
+  constructor(public auth: Auth, ){
+   usuario: auth.currentUser;
+  }
+
+
 }

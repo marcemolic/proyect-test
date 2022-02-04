@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "proyect-test-75f71": {
+      "hosting": {
+        "proyect-test": [
+          "proyect-test-75f71"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "proyect-test-75f71"
+  }
+}

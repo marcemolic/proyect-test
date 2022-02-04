@@ -1,0 +1,41 @@
+<div class="container mt-3">
+  <div class="row mb-3">
+  </div>
+  <hr>
+  <div class="row">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Usuario</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Correo electronico</th>
+          <th scope="col">Telefono</th>
+          <th scope="col" class="table-secondary">Opciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="table-info" *ngFor="let registro of registros">
+          <!-- TODO: Crear ngfor -->
+          <th scope="row"> {{ registro.username}} </th>
+          <td>
+             {{registro.name}}
+          </td>
+          <td>
+            {{ registro.email}}
+          </td>
+          <td> 
+            {{registro.phone}}
+          </td>
+          <td class="table-secondary">
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <button type="button" (click)="goToEdit(registro)" class="btn btn-outline-primary">Editar</button>
+              <button type="button" class="btn btn-outline-danger">Eliminar</button>
+            </div>
+
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+</div>

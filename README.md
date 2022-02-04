@@ -1,27 +1,16 @@
 # ProyectTest
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.3.
+Este proyecto fue realizado con [Angular CLI](https://github.com/angular/angular-cli) en su version 13.1.3.
 
-## Development server
+## Ambiente de desarrollo
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Para correr la aplicaciondesde un entorno de desarrollo se debe installar las dependecias de node.js, dentro de la carpeta del proyecto se debe ejecutar el comando `npm install` una vez instalada se puede iniciar con el comando `ng serve` que funcionara como servidor local en el link `http://localhost:4200/`. donde estará ya funcionando la app
 
-## Code scaffolding
+## como entrar En el proyecto
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+para ver en el proyecto se puede ingresar con los siguentes datos:
 
-## Build
+1. correo electronico: correo@gmail.com
+2. contraseña: 123456789
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+cabe aclarar que login esta funcionando con el autentificador de firebase, y los datos mostrados se extraen desde la API de [JSONPlaceholder](https://jsonplaceholder.typicode.com)
